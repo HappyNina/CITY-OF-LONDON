@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+	   <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width,initial-scale=1">
+	   <title>Book</title>
+	   <link rel="stylesheet" href="CSS/layout.css" media="screen"/>
+	</head>
+	
+<body class="form">
+				
+<header role="banner">
+	<div class="content noindex">
+	  <div class="logo">
+			<a title="Go to the City of London home page" href="/">
+            <img alt="City of London logo" src="images/HeaderLogo.png"></a>
+	</div>
+    <div class="mobonly noindex"><span class="phone"><a href="tel:5196612489">519-661-CITY (2489)</a></span></div>
+	<div class="filling noindex"><span class="italic">The official website of the City of London</span>&nbsp;<span class="italic">300 Dufferin Avenue</span>&nbsp;<span class="italic">519-661-CITY (2489)</span>&nbsp;<span class="italic">3-1-1 (within London)</span></div>
+</header>
+
+<div id="wrap">		
+		
+	<nav>
+		<ul id="menu">
+			<li>
+				<a class="residents" href="https://www.london.ca/residents/Pages/default.aspx">Residents</a>
+				    <ul>
+					    <li><a href="Recreation.html" target="_blank">Recreation</a></li>
+		                <li><a href="EmergencyInfo.html" target="_blank">Emergency Info</a></li>
+						<li><a href="PropertyMatters.html" target="_blank">Property Matters</a></li>
+		                <li><a href="AnimalServices.html" target="_blank">Animal Services</a></li>
+					</ul>
+            </li>					 
+						
+			<li>			
+				<a class="business" href="https://www.london.ca/business/Pages/default.aspx">Business</a>
+				    <ul>
+					    <li><a href="BusinessSupport.html" target="_blank">Business Support</a></li>
+		                <li><a href="Municipal.html" target="_blank">Municipal Property</a></li>
+						<li><a href="Permits.html" target="_blank">Permits and Licences</a></li>
+		            </ul>
+			</li>	
+				
+			<li>
+				<a class="cityhall" href="https://www.london.ca/city-hall/Pages/default.aspx">City Hall</a>
+				   <ul>
+					    <li><a href="Accessibility.html" target="_blank">Accessibility</a></li>
+		                <li><a href="Awards.html" target="_blank">Awards</a></li>
+						<li><a href="Budget.html" target="_blank">Budget</a></li>
+						<li><a href="Employment.html" target="_blank">Employment</a></li>
+		            </ul>
+			</li>
+
+			<li>
+				<a class="services" href="https://www.london.ca/online-services/Pages/default.aspx">Online Services</a>
+					<ul>
+					    <li><a href="Book.html" target="_blank">Book Tee Time</a></li>
+		                <li><a href="BizPal.html" target="_blank">BizPal</a></li>
+						<li><a href="Building.html" target="_blank">Building E-Portal</a></li>
+					</ul>
+			</li>
+				
+			<li>
+				<a class="about" href="https://www.london.ca/about-london/Pages/default.aspx">About London</a>
+					<ul>
+					    <li><a href="Culture.html"  target="_blank">Culture</a></li>
+		                <li><a href="Education.html"  target="_blank">Education</a></li>
+						<li><a href="Heritage.html"  target="_blank">Heritage</a></li>
+					</ul>
+				
+			</li>
+		</ul>
+	</nav>
+		
+    <img src="images/Golf.png" width="100%" height="100%" alt="Golf"/>
+	
+	
+	<h1 class="purple">Golf Player Registration Form</h1>
+	<h2 id='yellow'>Summer 2019</h2>
+		<form>
+
+            <article>
+			<p>
+			<label><b>Name</b>
+			<input type="text" name="customer_name" required>
+			</label> 
+			</p>
+
+            <article class="child"> 
+			<p>
+			<label><b>Phone</b>
+			<input type="tel" name="phone_number" required>
+			</label>
+			</p>
+            </article>
+
+			<p>
+			<label><b>Email</b>
+			<input type="email" name="email_address" required>
+			</label>
+			</p>
+			</article>
+
+			<fieldset id="sibling">
+			<legend>Which Golf Course Location?</legend>
+			<p><label> <input type="radio" name="position" required value="F"> Belmont </label></p>
+			<p><label> <input type="radio" name="position" required value="M"> Bear Creek </label></p>
+			<p><label> <input type="radio" name="position" required value="D"> Fanshawe </label></p>
+			<p><label> <input type="radio" name="position" required value="GK"> Thames </label></p>
+			</fieldset>
+
+            <fieldset id="adjacentsibling">
+			<legend>What Time you wish to play?</legend>
+			<p><label> <input type="radio" name="position" required value="F"> 9:00 a.m. </label></p>
+			<p><label> <input type="radio" name="position" required value="M"> 10:00 a.m. </label></p>
+			<p><label> <input type="radio" name="position" required value="D"> 1:00 p.m. </label></p>
+			<p><label> <input type="radio" name="position" required value="GK"> 2:00 p.m. </label></p>
+			</fieldset>  
+
+            <section>
+			<p>
+			<label>Preferred Start Date
+			<input type="date" name="pickup_time">
+			</label>(optional)
+			</p>
+			
+            <section class="child">			
+			<p>
+			<label>Shotgun Tournaments
+			<select id="pickup_place" name="pickup_place">
+			<option value="" selected="selected">Select One</option>
+			<option value="NL" >Thames Classic 18 - 100 player minimum</option>
+			<option value="Byron" >Fanshawe Traditional – 100 player minimum</option>
+			<option value="CW" >Fanshawe Quarry – 80 players minimum</option>
+			</select>
+			</label>(optional) 
+			</p>
+            </section>
+
+			<p>
+			<label>Golf Number
+			<input type="text" name="jersey_number" list="numbers">
+			</label>(optional)
+            </section>
+
+			<datalist id="numbers">
+				<option value="GK">
+				<option value="02">
+				<option value="03">
+				<option value="04">
+				<option value="05">
+				<option value="06">
+				<option value="07">
+				<option value="08">
+				<option value="09">
+				<option value="10">
+				<option value="11">
+			</datalist>
+			</p>
+
+			<p>
+			<label>Special Instructions
+			<textarea name="comments" maxlength="500"></textarea>
+			</label>(optional)
+			</p>
+
+			<p><button>Submit Form</button></p>
+
+		</form>
+	
+	<footer class="noindex">
+		<div id="footerLinks">
+			<ul id="menu">
+				<li>
+					<a class="residents" href="https://www.london.ca/residents/Pages/default.aspx">Residents</a>
+				      <ul>
+					    <li><a href="Recreation.html" target="_blank">Recreation</a></li>
+		                <li><a href="EmergencyInfo.html" target="_blank">Emergency Info</a></li>
+						<li><a href="PropertyMatters.html" target="_blank">Property Matters</a></li>
+		                <li><a href="AnimalServices.html" target="_blank">Animal Services</a></li>
+					  </ul>
+				</li>					 
+						
+				<li>			
+					<a class="business" href="https://www.london.ca/business/Pages/default.aspx">Business</a>
+				      <ul>
+					    <li><a href="BusinessSupport.html" target="_blank">Business Support</a></li>
+		                <li><a href="Municipal.html" target="_blank">Municipal Property</a></li>
+						<li><a href="Permits.html" target="_blank">Permits and Licences</a></li>
+		              </ul>
+				</li>	
+				
+				<li>
+					<a class="cityhall" href="https://www.london.ca/city-hall/Pages/default.aspx">City Hall</a>
+				     <ul>
+					    <li><a href="Accessibility.html" target="_blank">Accessibility</a></li>
+		                <li><a href="Awards.html" target="_blank">Awards</a></li>
+						<li><a href="Budget.html" target="_blank">Budget</a></li>
+						<li><a href="Employment.html" target="_blank">Employment</a></li>
+		              </ul>
+				</li>
+
+				<li>
+					<a class="services" href="https://www.london.ca/online-services/Pages/default.aspx">Online Services</a>
+					  <ul>
+					    <li><a href="Book.html" target="_blank">Book Tee Time</a></li>
+		                <li><a href="BizPal.html" target="_blank">BizPal</a></li>
+						<li><a href="Building.html" target="_blank">Building E-Portal</a></li>
+					  </ul>
+				</li>
+				
+				<li>
+					<a class="about" href="https://www.london.ca/about-london/Pages/default.aspx">About London</a>
+					  <ul>
+					    <li><a href="Culture.html"  target="_blank">Culture</a></li>
+		                <li><a href="Education.html"  target="_blank">Education</a></li>
+						<li><a href="Heritage.html"  target="_blank">Heritage</a></li>
+					  </ul>
+				
+				</li>
+			</ul>
+		</div>
+			
+			
+		<br>
+		<div id="footerLogo"><img alt="City of London logo" src="images/HeaderLogo.png"></div>
+			
+		<div id="footerCopy">
+		  <hr>
+			<span>Translation service provided by Microsoft Translator.</span>
+			<span>Copyright © City of London. All Rights Reserved.</span>
+		</div>
+	</footer>
+		
+	
+</body>
+</html>
